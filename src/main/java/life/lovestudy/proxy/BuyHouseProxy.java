@@ -12,9 +12,9 @@ public class BuyHouseProxy implements InvocationHandler {
 	
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-		BuyHouseUtil.preBuy();
+		BuyHouseUtil.preBuy();      // 织入前期工作
 		method.invoke(target, args);
-		BuyHouseUtil.afterBuy();
+		BuyHouseUtil.afterBuy();    // 织入后期工作
 		return null;
 	}
 }

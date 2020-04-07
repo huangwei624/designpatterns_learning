@@ -6,9 +6,11 @@ import java.lang.reflect.Method;
 public class BuyHouseProxy implements InvocationHandler {
 	
 	private Object target;
+	
 	public BuyHouseProxy(Object target) {
 		this.target = target;
 	}
+	
 	
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {

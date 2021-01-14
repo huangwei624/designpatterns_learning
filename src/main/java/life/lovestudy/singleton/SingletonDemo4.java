@@ -5,7 +5,7 @@ public class SingletonDemo4 {
 
 	private SingletonDemo4(){};
 	
-	public SingletonDemo4 getInstance(){
+	public static SingletonDemo4 getInstance(){
 		return InstanceClass.singletonDemo4;
 	}
 	

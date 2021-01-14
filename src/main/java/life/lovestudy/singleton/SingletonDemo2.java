@@ -5,7 +5,7 @@ public class SingletonDemo2 {
 	private static SingletonDemo2 instance;
 	private SingletonDemo2(){};
 	
-	public SingletonDemo2 getInstance(){
+	public static SingletonDemo2 getInstance(){
 		if(instance == null){   // 这里线程不安全
 			instance = new SingletonDemo2();
 		}
